@@ -12,11 +12,11 @@ var svg = d3.select("#my_dataviz")
       "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/2_TwoNum.csv", function(data) {
-
+d3.csv("cbb_2020.csv", function(data) {
+console.log(data);
 // Add X axis
 var x = d3.scaleLinear()
-.domain([0, 4000])
+.domain([0, 150])
 .range([ 0, width ]);
 svg.append("g")
 .attr("transform", "translate(0," + height + ")")
@@ -24,7 +24,7 @@ svg.append("g")
 
 // Add Y axis
 var y = d3.scaleLinear()
-.domain([0, 500000])
+.domain([0, 100])
 .range([ height, 0]);
 svg.append("g")
 .call(d3.axisLeft(y));
@@ -35,9 +35,13 @@ svg.append('g')
 .data(data)
 .enter()
 .append("circle")
-  .attr("cx", function (d) { return x(d.GrLivArea); } )
-  .attr("cy", function (d) { return y(d.SalePrice); } )
+  .attr("cx", function (d) { return + x(d.ADJOE); } )
+  .attr("cy", function (d) { return + y(d.P_O); } )
   .attr("r", 1.5)
   .style("fill", "#69b3a2")
+
+for (var i = 0; i < data.length; i++) {
+    console.log(data[i].TEAM);
+}
 
 })
