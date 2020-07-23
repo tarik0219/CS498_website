@@ -7,15 +7,23 @@ var margin = {top: 10, right: 30, bottom: 100, left: 100},
     height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
+
+
+var svg4 = d3.select("#my_dataviz2")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
   .attr("transform", "translate(" + margin.left  + "," + margin.top + ")");
 
+var svg = d3.select("#my_dataviz2")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left  + "," + margin.top + ")");
 
-var svg2 = d3.select("#my_dataviz")
+var svg3 = d3.select("#my_dataviz2")
   .append("svg")
   .attr("width", 500)
   .attr("height", 500 )
@@ -23,19 +31,17 @@ var svg2 = d3.select("#my_dataviz")
   .attr("transform", "translate(" + (margin.left )  + "," + margin.top + ")");
 
 
-var svg3 = d3.select("#my_dataviz")
+var svg2 = d3.select("#my_dataviz2")
   .append("svg")
   .attr("width", 500)
   .attr("height", 500 )
   .append("g")
   .attr("transform", "translate(" + (margin.left )  + "," + margin.top + ")");
 
-var svg4 = d3.select("#my_dataviz")
-  .append("svg")
-  .attr("width", 500)
-  .attr("height", 500 )
-  .append("g")
-  .attr("transform", "translate(" + (margin.left )  + "," + margin.top + ")");
+
+
+
+
 
 
   d3.csv("cbb_2020.csv", function(data) {
@@ -143,7 +149,7 @@ var svg4 = d3.select("#my_dataviz")
 
 
 
-  d3.csv("cbb_2020.csv", function(data) {
+d3.csv("cbb_2020.csv", function(data) {
 
     var x3 = d3.scaleLinear()
     .domain([0, 100])
@@ -158,7 +164,7 @@ var svg4 = d3.select("#my_dataviz")
     svg3.append("g")
       .call(d3.axisLeft(y3));
 
-    var tooltip3 = d3.select("#my_dataviz")
+    var tooltip3 = d3.select("#my_dataviz2")
       .append("div")
       .style("position", "absolute")
       .style("visibility", "hidden")
@@ -261,7 +267,7 @@ d3.csv("cbb_2020.csv", function(data) {
     svg2.append("g")
       .call(d3.axisLeft(y2));
 
-    var tooltip2 = d3.select("#my_dataviz")
+    var tooltip2 = d3.select("#my_dataviz2")
     .append("div")
     .style("position", "absolute")
     .style("visibility", "hidden")
@@ -369,7 +375,7 @@ d3.csv("cbb_2020.csv", function(data) {
 
   // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
   // Its opacity is set to 0: we don't see it by default.
-  var tooltip = d3.select("#my_dataviz")
+  var tooltip = d3.select("#my_dataviz2")
       .append("div")
       .style("position", "absolute")
       .style("visibility", "hidden")

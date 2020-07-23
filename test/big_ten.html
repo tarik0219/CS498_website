@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+<head>
+    <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    form {text-align: center;}
+</style>
+</head>
+
+<h1>College Basketball 2019-2020 BIG TEN (B1G)</h1>
+<p>Mouse over the each bar to highlight only one specific team</p>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<div id="my_dataviz2"></div>
+<div id="my_dataviz3"></div>
+
+<p>Wins: Number of Conference wins for 2019-2020 season given 20 games</p>
+<p>Adjusted Offense:  An estimate of the offensive efficiency (points scored per 100 possessions) of a team against an average D1 school</p>
+<p>Adjusted Defence:  An estimate of the deffensive efficiency (points allowed per 100 possessions) of a team against an  average D1 school</p>
+<p>Adjusted Offense - Adjusted Defence:  An estimate of the overall efficiency (points difference per 100 possessions) of a team against an average D1 school</p>
+<p>Offensive Rebound %: Offensive Rebound Rate for a given possesion</p>
+<p>3PT FG%: Three-Point Shooting Percentage</p>
+<p>2PT FG%: Two-Point Shooting Percentage</p>
+
+<form action="bar_conf.html">
+    <input type="submit" value="Go to previous slide" />
+</form>
+
+<script src="big_ten.js"></script>

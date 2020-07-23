@@ -30,7 +30,7 @@ var svg2 = d3.select("#my_dataviz")
             
 
 
-var svg4 = d3.select("#my_dataviz")
+var svg4 = d3.select("#my_dataviz2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
