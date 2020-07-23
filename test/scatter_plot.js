@@ -256,7 +256,7 @@ d3.csv("cbb_2020.csv", function(data) {
 
 
     var y2 = d3.scaleLinear()
-    .domain([20, 35])
+    .domain([20, 40])
     .range([ height, 0]);
     svg2.append("g")
       .call(d3.axisLeft(y2));
@@ -292,7 +292,7 @@ d3.csv("cbb_2020.csv", function(data) {
 
     var mousemove2 = function(d) {
       tooltip2
-      .html("Team: " + d.TEAM + "</br>" + "Conference: " + d.CONF + "</br>" + "Win % : " + Math.round((((+ d.W)/ (+ d.G)) * 10000))/100 + "</br>" + "Defensive Reboud %: " + ( d.DRB))
+      .html("Team: " + d.TEAM + "</br>" + "Conference: " + d.CONF + "</br>" + "Win % : " + Math.round((((+ d.W)/ (+ d.G)) * 10000))/100 + "</br>" + "Offensive Reboud %: " + ( d.ORB))
       .style("top", (event.pageY + 100)+"px").style("left",(event.pageX + 100)+"px")
     }
 
@@ -314,7 +314,7 @@ d3.csv("cbb_2020.csv", function(data) {
       .append("circle")
         .attr("class", function (d) { return "dot " + d.CONF } )
         .attr("cx", function (d) { return  + x2(((+ d.W)/ (+ d.G)) * 100); } )
-        .attr("cy", function (d) { return + y2(d.DRB); } )
+        .attr("cy", function (d) { return + y2(d.ORB); } )
         .attr("r", 3)
         .style("fill", function (d) { return color2(d.CONF) } )
       .on("mouseover", mouseover2 )
@@ -335,18 +335,18 @@ d3.csv("cbb_2020.csv", function(data) {
       .attr("x", -width/2)
       .attr("dy", ".75em")
       .attr("transform", "rotate(-90)")
-      .text("Defensive Reboud %");
+      .text("Offensive Reboud %");
       
     svg2.append("line")//making a line for legend
       .attr("x1", 0)
       .attr("x2", width)
-      .attr("y1", 91.6)
-      .attr("y2", 232.52)
+      .attr("y1", 322.57)
+      .attr("y2", 118.99)
       .style("stroke-dasharray","5,5")//dashed array for line
       .style("stroke", "blue");
     
-      svg2.append("text").attr("x", 50).attr("y", 300).text("y = -0.0542x + 31.477").style("font-size", "10px").attr("alignment-baseline","middle") 
-      svg2.append("text").attr("x", 50).attr("y", 315).text("   R² = 0.0944      ").style("font-size", "10px").attr("alignment-baseline","middle") 
+      svg2.append("text").attr("x", 50).attr("y", 100).text("y = 0.1044x + 23.458").style("font-size", "10px").attr("alignment-baseline","middle") 
+      svg2.append("text").attr("x", 50).attr("y", 115).text("   R² = 0.1309      ").style("font-size", "10px").attr("alignment-baseline","middle") 
 
 })
 
