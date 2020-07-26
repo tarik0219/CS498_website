@@ -3,7 +3,7 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
     width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var svg3 = d3.select("#my_dataviz")
+var svg3 = d3.select("#chart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -12,7 +12,7 @@ var svg3 = d3.select("#my_dataviz")
             "translate(" + margin.left + "," + margin.top + ")");
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
+var svg = d3.select("#chart")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -20,7 +20,7 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-var svg2 = d3.select("#my_dataviz")
+var svg2 = d3.select("#chart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -30,7 +30,7 @@ var svg2 = d3.select("#my_dataviz")
             
 
 
-var svg4 = d3.select("#my_dataviz2")
+var svg4 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -38,7 +38,7 @@ var svg4 = d3.select("#my_dataviz2")
     .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-var svg5 = d3.select("#my_dataviz2")
+var svg5 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -46,7 +46,7 @@ var svg5 = d3.select("#my_dataviz2")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-var svg6 = d3.select("#my_dataviz2")
+var svg6 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)

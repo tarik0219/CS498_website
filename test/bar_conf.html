@@ -14,12 +14,19 @@
 </style>
 </head>
 
-<h1>College Basketball 2019-2020 Top 6 Conferences Averages</h1>
-<p>Mouse over the each bar to highlight only one specific conference</p>
+<h1>College Basketball 2019-2020 Top 6 Conference Averages</h1>
+<form action="big_ten.html">
+    <input type="submit" value="Go to next slide" />
+</form>
+
+<form action="scatter_cbb.html">
+    <input type="submit" value="Go to previous slide" />
+</form>
+<p>Mouse over the each bar to highlight only one specific conference to compare that conference more effeciantly</p>
 
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-<div id="my_dataviz2"></div>
+<div id="chart"></div>
+<div id="chart2"></div>
 
 <p>Adjusted Offense average:  An estimate of the offensive efficiency (points scored per 100 possessions) of a conference against an average D1 school</p>
 <p>Adjusted Defence:  An estimate of the deffensive efficiency (points allowed per 100 possessions) of a conference against an average D1 school</p>
@@ -28,12 +35,6 @@
 <p>3PT FG%: Three-Point Shooting Percentage average for the conference</p>
 <p>2PT FG%: Two-Point Shooting Percentage average for the conference</p>
 
-<form action="big_ten.html">
-    <input type="submit" value="Go to next slide" />
-</form>
 
-<form action="scatter_cbb.html">
-    <input type="submit" value="Go to previous slide" />
-</form>
 
 <script src="bar_conf.js"></script>

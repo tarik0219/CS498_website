@@ -4,7 +4,7 @@ height = 500 - margin.top - margin.bottom;
 
 
 
-var svg = d3.select("#my_dataviz")
+var svg = d3.select("#chart")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -12,7 +12,7 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-var svg3 = d3.select("#my_dataviz2")
+var svg3 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -20,7 +20,7 @@ var svg3 = d3.select("#my_dataviz2")
     .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-var svg2 = d3.select("#my_dataviz2")
+var svg2 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -28,7 +28,7 @@ var svg2 = d3.select("#my_dataviz2")
     .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-var svg4 = d3.select("#my_dataviz2")
+var svg4 = d3.select("#chart2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -37,7 +37,7 @@ var svg4 = d3.select("#my_dataviz2")
             "translate(" + margin.left + "," + margin.top + ")");
 
 
-var svg5 = d3.select("#my_dataviz3")
+var svg5 = d3.select("#chart3")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -45,7 +45,7 @@ var svg5 = d3.select("#my_dataviz3")
     .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
     
-var svg6 = d3.select("#my_dataviz3")
+var svg6 = d3.select("#chart3")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -53,7 +53,7 @@ var svg6 = d3.select("#my_dataviz3")
     .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-var svg7 = d3.select("#my_dataviz3")
+var svg7 = d3.select("#chart3")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
